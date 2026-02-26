@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Charter Worldbuilder</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/leader-line/leader-line.min.js"></script>
 </head>
 <body>
-
-    <div id="toolbar">
-        <button onclick="addNode('location')">🏰 New Location</button>
-        <button onclick="addNode('npc')">🧙‍♂️ New NPC</button>
-        <button onclick="saveToSupabase()">💾 Save to Cloud</button>
+    <div id="ui-layer">
+        <h1>Charter</h1>
+        <button onclick="createNewNode()">🏰 Add Location</button>
+        <button onclick="saveAll()">💾 Save to Cloud</button>
     </div>
 
-    <div id="canvas">
-        </div>
+    <div id="canvas"></div>
 
     <script src="script.js"></script>
 </body>
